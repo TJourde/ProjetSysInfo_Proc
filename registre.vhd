@@ -62,9 +62,9 @@ begin
 	end process;
 	
 
-	 		QA <= DATA when RWadr = RAadr else registers(conv_integer(unsigned(RAadr))); 
+	 		QA <= registers(conv_integer(unsigned(RAadr))); 
 
-			QB <= DATA when RWadr = RBadr else registers(conv_integer(unsigned(RBadr)));
+			QB <= registers(conv_integer(unsigned(RBadr)));
 
 
 end Behavioral;
